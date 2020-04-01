@@ -43,7 +43,7 @@
         <div class="container mt-5">
             <div class="row">
                 <div class="col-md-3">
-                    <div class="img"><img src="icon2.jpg" class="rounded-circle" width="93%"></div>
+                    <div class="img"><img id="icon" src="icon2.jpg" class="rounded-circle" width="93%" alt="Tang Man Yue's icon"></div>
                     <br>
                 </div>
                 <div class="col-md-9 about-text align-self-center">
@@ -60,7 +60,7 @@
         <div class="container mt-5">
             <div class="row">
                 <div class="col-md-4 pt-5">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Hktlc.JPG/1200px-Hktlc.JPG" width="90%">
+                    <img id="hktlc" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Hktlc.JPG/1200px-Hktlc.JPG" width="90%" alt="HKTLC">
                 </div>
                 <div class="col-md-8 about-text">
                     <h3>Hong Kong True Light College <br> (2011-2017)</h3>
@@ -85,15 +85,15 @@
                     </p>
                 </div>
                 <div class="col-md-4 pt-5">
-                    <img src="https://www.hkcc-polyu.edu.hk/filemanager/en/content_12/Campus-HungHomBay.jpg" width="90%">
-                    <img src="https://www.hkcc-polyu.edu.hk/filemanager/template/common/images/Logo-HKCC.svg" width="90%">
+                    <img id="hkcc1" src="https://www.hkcc-polyu.edu.hk/filemanager/en/content_12/Campus-HungHomBay.jpg" width="90%" alt="HKCC">
+                    <img id="hkcc2" src="https://www.hkcc-polyu.edu.hk/filemanager/template/common/images/Logo-HKCC.svg" width="90%" alt="HKCC's logo">
                 </div>
             </div>
             <br>
             <br>
             <div class="row">
                 <div class="col-md-4 pt-5">
-                    <img src="PolyU1.jpg" width="90%">
+                    <img id="polyu" src="PolyU1.jpg" width="90%" alt="polyu">
                 </div>
                 <div class="col-md-8 about-text">
                     <h3>The Hong Kong Polytechnic University <br> (2019-present)</h3>
@@ -163,38 +163,24 @@
             </div>
         </div>
     </div>
-    <!-- Add scrollspy to <body> -->
-    <script>
-        $(document).ready(function() {
-            // Add scrollspy to <body>
-            $('body').scrollspy({
-                target: ".navbar",
-                offset: 50
-            });
 
-            // Add smooth scrolling on all links inside the navbar
-            $("#navbar a").on('click', function(event) {
-                // Make sure this.hash has a value before overriding default behavior
-                if (this.hash !== "") {
-                    // Prevent default anchor click behavior
-                    event.preventDefault();
-
-                    // Store hash
-                    var hash = this.hash;
-
-                    // Using jQuery's animate() method to add smooth page scroll
-                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-                    $('html, body').animate({
-                        scrollTop: $(hash).offset().top
-                    }, 800, function() {
-
-                        // Add hash (#) to URL when done scrolling (default click behavior)
-                        window.location.hash = hash;
-                    });
-                } // End if
-            });
-        });
-    </script>
+      <script>
+$( "#icon" ).click(function() {
+  alert( "Graduation photo in 2019" );
+});
+$( "#hktlc" ).click(function() {
+  alert( "Address: 1 Lei Tung Estate Road, Apleichau, Hong Kong" );
+});
+$( "#hkcc1" ).click(function() {
+  alert( "Address: 8 Hung Lok Road, Hung Hom, Kowloon (PolyU Hung Hom Bay Campus)" );
+});
+$( "#hkcc2" ).click(function() {
+  alert( "Address: 9 Hoi Ting Road, Yau Ma Tei, Kowloon (PolyU West Kowloon Campus)" );
+});
+$( "#polyu" ).click(function() {
+  alert( "Address: The Hong Kong Polytechnic University, Hung Hom, Kowloon, Hong Kong" );
+});
+     </script>
 </body>
 <footer>
     <table class="table table-bordered">
