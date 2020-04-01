@@ -11,4 +11,3 @@ Note: Internet Explorer 9 and earlier versions do not support it correctly.
 3) Pop-up alert on image click
 Click on the image of About me and it will pop-up alert (message: Graduation photo in 2019)
 Click on images of education and it will pop-up alert (message: school address)
-
