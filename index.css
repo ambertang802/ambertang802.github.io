@@ -68,6 +68,7 @@ html {
 }
 body {
 	position: relative;
+	cursor: url(Cinnamoroll.ani) ,progress;
 }
 #About_me {
 	background: #ffffff;
