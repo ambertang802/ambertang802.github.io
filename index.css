@@ -11,6 +11,16 @@
 	    margin-right: auto;
   }
 }
+@media (max-width:540px) {
+	a.navbar-brand{
+		width:75%
+	}
+}
+@media (max-width:336px) {
+	a.navbar-brand{
+		width:70%
+	}
+}
 
 @media (max-width:540px) {
 	.banner {
@@ -76,7 +86,7 @@ body {
 }
 /* Start http://www.cursors-4u.com */
  * {
-	 cursor: url(http://cur.cursors-4u.net/nature/nat-1/nat21.ani), url(http://cur.cursors-4u.net/nature/nat-1/nat21.png), auto !important;
+	 cursor: url(KOOKY.cur), auto !important;
 	}
  /* End http://www.cursors-4u.com */
 #About_me {
