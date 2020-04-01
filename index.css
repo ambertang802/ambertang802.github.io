@@ -1,8 +1,21 @@
-.banner {
-	padding-top: 70px;
-	padding-bottom: 25px;
-	background-color: #e9ecef;
-	border-radius: .3rem;
+html {
+	scroll-behavior: smooth;
+}
+body {
+	position: relative;
+}
+
+* {
+	 cursor: url(KOOKY.cur), auto !important;
+}
+
+@media (min-width:540px) {
+	a.navbar-brand{
+		width:75%
+	}
+	.banner h1 {
+		font-size: 2rem;
+	}
 }
 @media (min-width:720px) {
     .carousel {
@@ -11,17 +24,12 @@
 	    margin-right: auto;
   }
 }
-@media (max-width:540px) {
-	a.navbar-brand{
-		width:75%
-	}
-}
+
 @media (max-width:336px) {
 	a.navbar-brand{
 		width:70%
 	}
 }
-
 @media (max-width:540px) {
 	.banner {
         padding-top: 6rem;
@@ -41,14 +49,11 @@
 	}
     .carousel {
         width: 100%;
-    }
-}
-@media (max-width: 991px) {
-	.col-md-8 h3 {
-		font-size: 1.5rem;
+	}
+	a.navbar-brand{
+		width:75%
 	}
 }
-
 @media (max-width:720px) {
 	.banner {
 		padding-top: 5rem;
@@ -58,11 +63,81 @@
 		margin: 0 10% 5% 16%;
 	}
 }
-@media (min-width:540px) {
-	.banner h1 {
-		font-size: 2rem;
+@media (max-width: 991px) {
+	.col-md-8 h3 {
+		font-size: 1.5rem;
 	}
 }
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+	from {opacity: 0;} 
+	to {opacity: 1;}
+}
+  
+@keyframes fadeIn {
+	from {opacity: 0;}
+	to {opacity:1 ;}
+}
+
+.banner {
+	padding-top: 70px;
+	padding-bottom: 17px;
+	background-color: #e9ecef;
+	border-radius: .3rem;
+}
+/* Make the image fully responsive */
+.carousel-inner img {
+	width: 100%;
+	height: 100%;
+}
+.col-md-8 p,.col-md-12 p {
+	font-family: sans-serif;
+}
+.img, .hktlc, .hkcc, .polyu {
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+  }
+  
+/* The actual popup */
+.img .popuptext, .hktlc .popuptext, .hkcc .popuptext, .polyu .popuptext {
+	visibility: hidden;
+	width: 160px;
+	background-color: #555;
+	color: #fff;
+	text-align: center;
+	border-radius: 6px;
+	padding: 8px 0;
+	position: absolute;
+	z-index: 1;
+	bottom: 110%;
+	left: 50%;
+	margin-left: -80px;
+}
+  
+/* Popup arrow */
+.img .popuptext::after, .hktlc .popuptext::after, .hkcc .popuptext::after, .polyu .popuptext::after {
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin-left: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: #555 transparent transparent transparent;
+}
+  
+/* Toggle this class - hide and show the popup */
+.img .show, .hktlc .show, .hkcc .show, .polyu .show {
+	visibility: visible;
+	-webkit-animation: fadeIn 1s;
+	animation: fadeIn 1s;
+}
+
 .text-center {
 	text-align: center;
 }
@@ -70,25 +145,7 @@
 	text-align: center;
 	font-family: fantasy;
 }
-.col-md-8 p,.col-md-12 p {
-	font-family: sans-serif;
-}
-/* Make the image fully responsive */
-.carousel-inner img {
-	width: 100%;
-	height: 100%;
-}
-html {
-	scroll-behavior: smooth;
-}
-body {
-	position: relative;
-}
-/* Start http://www.cursors-4u.com */
- * {
-	 cursor: url(KOOKY.cur), auto !important;
-	}
- /* End http://www.cursors-4u.com */
+
 #About_me {
 	background: #ffffff;
 	height: auto;
@@ -114,58 +171,3 @@ footer {
 	margin-right: auto;
 	width: 70%;
 }
-.img, .hktlc, .hkcc, .polyu {
-	position: relative;
-	display: inline-block;
-	cursor: pointer;
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
-  }
-  
-  /* The actual popup */
-  .img .popuptext, .hktlc .popuptext, .hkcc .popuptext, .polyu .popuptext {
-	visibility: hidden;
-	width: 160px;
-	background-color: #555;
-	color: #fff;
-	text-align: center;
-	border-radius: 6px;
-	padding: 8px 0;
-	position: absolute;
-	z-index: 1;
-	bottom: 110%;
-	left: 50%;
-	margin-left: -80px;
-  }
-  
-  /* Popup arrow */
-  .img .popuptext::after, .hktlc .popuptext::after, .hkcc .popuptext::after, .polyu .popuptext::after {
-	content: "";
-	position: absolute;
-	top: 100%;
-	left: 50%;
-	margin-left: -5px;
-	border-width: 5px;
-	border-style: solid;
-	border-color: #555 transparent transparent transparent;
-  }
-  
-  /* Toggle this class - hide and show the popup */
-  .img .show, .hktlc .show, .hkcc .show, .polyu .show {
-	visibility: visible;
-	-webkit-animation: fadeIn 1s;
-	animation: fadeIn 1s;
-  }
-  
-  /* Add animation (fade in the popup) */
-  @-webkit-keyframes fadeIn {
-	from {opacity: 0;} 
-	to {opacity: 1;}
-  }
-  
-  @keyframes fadeIn {
-	from {opacity: 0;}
-	to {opacity:1 ;}
-  }
