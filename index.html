@@ -52,7 +52,7 @@
             <div class="row">
                 <div class="col-md-3">
                     <div class="img">
-                        <img src="icon2.jpg" class="rounded-circle" width="93%" alt="Tang Man Yue's icon" onclick="myFunction1()">
+                        <img src="icon2.jpg" class="rounded-circle" width="93%" alt="Tang Man Yue's icon" onclick="popup1()">
                         <span class="popuptext" id="icon">Graduation photo in 2019</span>
                     </div>
                     <br>
@@ -72,7 +72,7 @@
             <div class="row">
                 <div class="col-md-4 pt-5">
                     <div class="hktlc">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Hktlc.JPG/1200px-Hktlc.JPG" width="90%" alt="HKTLC" onclick="myFunction2()">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Hktlc.JPG/1200px-Hktlc.JPG" width="90%" alt="HKTLC" onclick="popup2()">
                     <span class="popuptext" id="hktlc">Address: 1 Lei Tung Estate Road, Apleichau, Hong Kong</span>
                     </div>
                 </div>
@@ -100,7 +100,7 @@
                 </div>
                 <div class="col-md-4 pt-5">
                     <div class="hkcc">
-                    <img src="https://www.hkcc-polyu.edu.hk/filemanager/en/content_12/Campus-HungHomBay.jpg" width="90%" alt="HKCC" onclick="myFunction3()">
+                    <img src="https://www.hkcc-polyu.edu.hk/filemanager/en/content_12/Campus-HungHomBay.jpg" width="90%" alt="HKCC" onclick="popup3()">
                     <span class="popuptext" id="hkcc">Address: 8 Hung Lok Road, Hung Hom, Kowloon (PolyU Hung Hom Bay Campus)<br><br>Address: 9 Hoi Ting Road, Yau Ma Tei, Kowloon (PolyU West Kowloon Campus)</span>
                     </div>
                 </div>
@@ -110,7 +110,7 @@
             <div class="row">
                 <div class="col-md-4 pt-5">
                     <div class="polyu">
-                    <img src="PolyU1.jpg" width="90%" alt="polyu" onclick="myFunction4()">
+                    <img src="PolyU1.jpg" width="90%" alt="polyu" onclick="popup4()">
                     <span class="popuptext" id="polyu">Address: The Hong Kong Polytechnic University, Hung Hom, Kowloon, Hong Kong</span>
                     </div>
                 </div>
@@ -184,19 +184,19 @@
     </div>
 
     <script>
-function myFunction1() {
+function popup1() {
   var popup = document.getElementById("icon");
   popup.classList.toggle("show");
 }
-function myFunction2() {
+function popup2() {
   var popup = document.getElementById("hktlc");
   popup.classList.toggle("show");
 }
-function myFunction3() {
+function popup3() {
   var popup = document.getElementById("hkcc");
   popup.classList.toggle("show");
 }
-function myFunction4() {
+function popup4() {
   var popup = document.getElementById("polyu");
   popup.classList.toggle("show");
 }
