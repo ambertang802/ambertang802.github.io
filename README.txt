@@ -13,4 +13,4 @@ Click on the image of About me and it will pop-up (message: Graduation photo in 
 Click on images of education and it will pop-up (message: school address).
 
 4) mouse cursor
-Change the cursor of my homepage.The character's name is cooky of BT21.
+Change the cursor of my homepage.
