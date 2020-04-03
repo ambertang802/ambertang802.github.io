@@ -24,7 +24,7 @@ body {
 	    margin-right: auto;
   }
 }
-@media (min-width:1290px) {
+@media (min-width:1380px) {
 	a.navbar-brand img{
 		width:3%;
 	}
