@@ -25,11 +25,6 @@ body {
   }
 }
 
-@media (max-width:336px) {
-	a.navbar-brand{
-		width:70%
-	}
-}
 @media (max-width:540px) {
 	.img {
         margin-left: 15%;
@@ -48,7 +43,7 @@ body {
         width: 100%;
 	}
 	a.navbar-brand{
-		width:75%
+		width:60%
 	}
 }
 @media (max-width:720px) {
