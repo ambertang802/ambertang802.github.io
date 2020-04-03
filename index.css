@@ -11,7 +11,7 @@ body {
 
 @media (min-width:540px) {
 	a.navbar-brand{
-		width:75%
+		width:75%;
 	}
 	.banner h1 {
 		font-size: 2rem;
@@ -23,6 +23,11 @@ body {
 	    margin-left: auto;
 	    margin-right: auto;
   }
+}
+@media (min-width:1290px) {
+	a.navbar-brand img{
+		width:3%;
+	}
 }
 
 @media (max-width:540px) {
@@ -43,7 +48,7 @@ body {
         width: 100%;
 	}
 	a.navbar-brand{
-		width:60%
+		width:60%;
 	}
 }
 @media (max-width:720px) {
